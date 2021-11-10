@@ -11,4 +11,7 @@ Pod::Spec.new do |spec|
   spec.platform         = :ios, '8.0'
   spec.ios.deployment_target = '8.0'
   spec.requires_arc     = true
+  spec.xcconfig = {
+    'VALID_ARCHS' =>  'arm64 armv7',
+  }
 end
