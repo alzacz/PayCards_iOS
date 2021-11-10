@@ -7,6 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary          = 'Bank card recognizer for mobile apps'
   spec.social_media_url = 'https://twitter.com/Pay_Cards'
   spec.source           = { :git => 'https://github.com/faceterteam/PayCards_iOS.git', :tag => "#{spec.version}" }
+  spec.vendored_frameworks = 'Source/PayCardsRecognizer.framework'
   spec.platform         = :ios, '8.0'
   spec.ios.deployment_target = '8.0'
   spec.requires_arc     = true
